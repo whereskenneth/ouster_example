@@ -74,6 +74,10 @@ int main(int argc, char* argv[]) {
     auto cloud = cartesian(range, lut);
     //! [doc-etag-cpp-xyz]
     //
+  
+    std::cout << range << std::endl;
+    std::cout << "Range sum: " << range.sum() << std::endl;
+  
     std::cerr << "\nLet's see what the 2000th point in this cloud is...  ("
               << cloud(2000, 0) << ", " << cloud(2000, 1) << ", "
               << cloud(2000, 2) << ")" << std::endl;
